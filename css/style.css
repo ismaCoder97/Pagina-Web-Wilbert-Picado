@@ -106,11 +106,14 @@ h3 { font-size: var(--fs-h3) }
 
 .section__title--intro {
     font-weight: var(--fw-reg);
+    font-size: 2.5rem;
 }
 
 .section__title--intro strong {
     display: block;
-    font-size: 2.5rem;
+    /*font-size: 2.5rem;*/
+   padding-top: 20px;
+    font-size: 25px;
 }
 
 .section__subtitle {
@@ -488,6 +491,8 @@ header{
         grid-area: img;
         position: relative;
         z-index: 2;
+        min-width: 300px;
+        min-height: 300px;
     }
 }
 
@@ -585,7 +590,23 @@ header{
 
 
 
+.acerca-info{
+    border-style:solid;
+    padding: auto;
+}
 
+.acerca-info h1{
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h1);
+    color:var(--clr-accent)
+}
 
+.acerca-info p{
+    font-family: "Montserrat",sans-serif;
+        font-size: 1rem;
+        margin-top: 10px;
+        color:var(--clr-dark);
+        font-weight: var(--fw-bold);
+}
 
 
