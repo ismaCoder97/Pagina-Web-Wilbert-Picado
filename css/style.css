@@ -17,7 +17,7 @@
     --clr-dark: #303030;
     --clr-accent: #B72E23 ;
     
-    --fs-h1: 3rem;
+    --fs-h1: 2rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
@@ -284,6 +284,120 @@ header{
 
 
 /*  My services section  */
+
+    .card h3{
+        position: absolute;
+        font-family: "Oswald",sans-serif;
+        left: 0px;
+        top: 0px;
+        padding: 15px;
+    }
+
+    .card i.bx{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        padding: 15px;
+        font-size: 1.3rem;
+    }
+
+    .card .con-text{
+        padding: 20px;
+    }
+
+    .card:hover{
+        transform: translate(0,-10px);
+        box-shadow: 0px 17px 35px 0px rgba(0, 0, 0, .07);
+    }
+
+    .card:hover .con-img{
+        transform: translate(0,-15px);
+    }
+
+    .card:hover .con-img img.blur{
+        opacity: .45;
+        transform: translate(-10px,26px);
+    }
+
+    .card .con-img{
+        width: calc(100%-60px);
+        margin: 0px 30px;
+        margin-top: -90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .35s ease-out;
+    }
+
+    .card img{
+        height: 300px;
+        padding-top:100px;
+        padding-left:20px;
+    }
+
+    .card img.blur{
+        position: absolute;
+        filter: blur(15px);
+        z-index: -1;
+        opacity: .35;
+        transform: translate(-10px,10px) scale(.85);
+        transition: all .35s ease-out;
+    }
+
+    .con-text h2{
+        font-family: "Oswald",sans-serif;
+        font-size: 30px;
+        color: var(--clr-accent);
+    }
+
+    .con-text p{
+        font-family: "Montserrat",sans-serif;
+        font-size: .8rem;
+        margin-top: 10px;
+        color:var(--clr-light);
+        font-weight: var(--fw-bold);
+    }
+
+    .card{
+        
+        width: 300px;
+        min-width: 300px;
+        height: auto;
+        background: var(--clr-dark);
+        border-radius: 30px;
+        position: relative;
+        z-index: 10;
+        margin: 25px;
+        min-height: 356px;
+        transition: all .25s ease;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, .08);
+        cursor: pointer;
+    }
+
+   .con-cards{
+       display: flex;
+       align-items: center;
+       justify-content: flex-start;
+       width: 100%;
+       overflow: auto;
+       padding-top: -100px;
+       padding-left: 60px;
+       padding-right: 50px;
+       scroll-behavior: smooth;
+   } 
+
+   .con-cards::-webkit-scrollbar{
+       height: 0px;
+   }
+
+   .con-cards:after{
+       content: "";
+       display: block;
+       min-width: 20px;
+       height: 100px;
+       position: relative;
+   }
+
 
 .my-services {
     background-color: var(--clr-dark);
