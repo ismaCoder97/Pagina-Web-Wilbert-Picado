@@ -515,8 +515,8 @@ header{
 }
 
 .portfolio__img {
-    width:  500px;
-    height: 300px;
+    width:  400px;
+    height: 250spx;
     transition: transform 750ms cubic-bezier(.5,0,.5,1),opacity 250ms linear;      
 }
 
@@ -530,6 +530,25 @@ header{
     transform: scale(1.2);
     opacity: .5;
 }
+
+.portfolio__item figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 420px;
+    margin: auto;
+}
+
+
+.portfolio__item figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
 
 /*  Footer*/
 
@@ -623,4 +642,7 @@ header{
     width: 70%;
 }
 
+.intro__img{
+    padding-left: auto;
+}
 
